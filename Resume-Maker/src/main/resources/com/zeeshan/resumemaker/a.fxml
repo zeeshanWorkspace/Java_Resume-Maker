@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1366.0" style="-fx-background-color: #ffffff;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zeeshan.resumemaker.AdvanceEvent">
+   <children>
+      <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane id="advancedPanel" prefHeight="750.0" prefWidth="683.0" GridPane.columnIndex="1">
+               <children>
+                  <Button id="advancedButtons" layoutX="84.0" layoutY="650.0" mnemonicParsing="false" onAction="#ChoosePhoto" text="Choose Photo">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="advancedButtons" layoutX="364.0" layoutY="650.0" mnemonicParsing="false" onAction="#Update" text="Update Resume">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="fnf" layoutX="25.0" layoutY="75.0" prefHeight="25.0" prefWidth="300.0" promptText="Enter first name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="lnf" layoutX="360.0" layoutY="75.0" prefHeight="25.0" prefWidth="300.0" promptText="Enter last name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="ff" layoutX="25.0" layoutY="160.0" prefHeight="25.0" prefWidth="300.0" promptText="Enter your field">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="pnf" layoutX="360.0" layoutY="160.0" prefHeight="25.0" prefWidth="300.0" promptText="Enter your phone no">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="emf" layoutX="25.0" layoutY="250.0" prefHeight="25.0" prefWidth="300.0" promptText="Enter your email">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="wf" layoutX="360.0" layoutY="250.0" prefHeight="25.0" prefWidth="300.0" promptText="Enter your website">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextArea fx:id="edua" layoutX="25.0" layoutY="350.0" prefHeight="60.0" prefWidth="300.0" promptText="Enter your qualification">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="exta" layoutX="360.0" layoutY="350.0" prefHeight="60.0" prefWidth="300.0" promptText="Enter your expertise">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="proa" layoutX="25.0" layoutY="450.0" prefHeight="60.0" prefWidth="300.0" promptText="Enter your profile detail">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="expa" layoutX="360.0" layoutY="450.0" prefHeight="60.0" prefWidth="300.0" promptText="Enter your experience">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="intra" layoutX="192.0" layoutY="550.0" prefHeight="60.0" prefWidth="300.0" promptText="Enter your interests">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </Pane>
+            <MenuBar id="advancedMenuBar" prefHeight="25.0" prefWidth="683.0" GridPane.columnIndex="1" GridPane.valignment="TOP">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#Newfile" text="New file" />
+                        <MenuItem mnemonicParsing="false" onAction="#PDFsave" text="Save as PDF" />
+                        <MenuItem mnemonicParsing="false" onAction="#Exit" text="Exit" />
+                  </items>
+                </Menu>
+              </menus>
+               <GridPane.margin>
+                  <Insets left="30.0" right="30.0" />
+               </GridPane.margin>
+            </MenuBar>
+            <Button id="backButton" fx:id="backButton" mnemonicParsing="false" onAction="#Back" text="🔙" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="-5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="exitButton" fx:id="exitButton" mnemonicParsing="false" onAction="#Exit" text="X" textFill="RED" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="-5.0" top="-5.0" />
+               </GridPane.margin>
+            </Button>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="730.0" prefWidth="200.0" style="-fx-background-color: #f6f6f6;">
+                     <children>
+                        <ImageView fx:id="imageView" fitHeight="250.0" fitWidth="200.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@a_img.png" />
+                           </image>
+                        </ImageView>
+                        <Label id="colorTexts" layoutX="10.0" layoutY="259.0" prefHeight="20.0" prefWidth="100.0" text="Contact">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="pn" layoutX="20.0" layoutY="287.0" prefHeight="20.0" prefWidth="172.0" text="+91-XXXXXXXXXX">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="em" layoutX="20.0" layoutY="312.0" prefHeight="20.0" prefWidth="172.0" text="email@email.com">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="w" layoutX="20.0" layoutY="337.0" prefHeight="20.0" prefWidth="172.0" text="www.website.com">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label id="colorTexts" layoutX="10.0" layoutY="375.0" prefHeight="20.0" prefWidth="100.0" text="Education">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="edu" alignment="TOP_LEFT" layoutX="14.0" layoutY="396.0" prefHeight="124.0" prefWidth="172.0" text="Define&#10;your&#10;qualification&#10;here&#10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Pane id="colorTexts" layoutY="530.0" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="100.0" text="Expertise">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="ext" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="19.0" layoutY="31.0" prefHeight="160.0" prefWidth="172.0" text="Define&#10;your&#10;expertise&#10;here&#10;">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Label id="colorTexts" fx:id="fn" layoutX="250.0" layoutY="42.0" text="MICHEL">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ln" layoutX="250.0" layoutY="89.0" text="RIGURIO">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="f" layoutX="250.0" layoutY="136.0" text="UX/UI Design">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="250.0" layoutY="180.0" prefHeight="560.0" prefWidth="400.0" style="-fx-background-color: #f6f6f6;">
+                     <children>
+                        <Label id="colorTexts" layoutX="10.0" layoutY="20.0" prefHeight="20.0" prefWidth="100.0" text="Profile">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="pro" alignment="TOP_LEFT" layoutX="21.0" layoutY="41.0" prefHeight="147.0" prefWidth="358.0" text="Define your&#10;profile&#10;here&#10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label id="colorTexts" layoutX="10.0" layoutY="192.0" prefHeight="20.0" prefWidth="100.0" text="Experience">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="exp" alignment="TOP_LEFT" layoutX="15.0" layoutY="213.0" prefHeight="147.0" prefWidth="370.0" text="Define&#10;your&#10;experience&#10;here&#10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label id="colorTexts" layoutX="10.0" layoutY="365.0" prefHeight="20.0" prefWidth="100.0" text="Interests">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="intr" alignment="TOP_LEFT" layoutX="21.0" layoutY="386.0" prefHeight="160.0" prefWidth="358.0" text="Define&#10;your&#10;interests&#10;here&#10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcd73a" height="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcd73a" height="5.0" layoutY="558.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

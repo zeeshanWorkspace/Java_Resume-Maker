@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1366.0" style="-fx-background-color: #ffffff;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zeeshan.resumemaker.DeveloperEvent">
+   <children>
+      <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="fnf" layoutX="41.0" layoutY="40.0" text="LAURA">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lnf" layoutX="41.0" layoutY="89.0" text="PARKER">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Line endX="130.0" layoutX="144.0" layoutY="145.0" startX="-100.0" stroke="GREY" />
+                  <Label fx:id="ff" layoutX="44.0" layoutY="149.0" text="UX &amp; UI Design">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imageView" fitHeight="191.0" fitWidth="180.0" layoutX="429.0" layoutY="-1.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@d_img.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="-100.0" endY="178.0" layoutX="760.0" layoutY="15.0" startX="-100.0" startY="-11.0" stroke="GREY" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="25.0" layoutX="648.0" layoutY="133.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
+                  <Pane layoutX="10.0" layoutY="190.0" prefHeight="50.0" prefWidth="494.0" style="-fx-background-color: #111111;">
+                     <children>
+                        <Label layoutX="8.0" layoutY="8.0" text="PHONE" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="87.0" layoutY="7.0" text="E-MAIL" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="178.0" layoutY="8.0" text="ADDRESS" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="pf" layoutX="8.0" layoutY="25.0" text="+91-XXXXXXXXXX" textFill="WHITE">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ef" layoutX="86.0" layoutY="25.0" text="e-mail@email.com" textFill="WHITE">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="af" layoutX="177.0" layoutY="25.0" text="Your address" textFill="WHITE">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="20.0" layoutY="246.0" text="PROFILE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pro" alignment="TOP_LEFT" layoutX="20.0" layoutY="281.0" prefHeight="160.0" prefWidth="468.0" text="Describe&#10;your&#10;profile&#10;here&#10;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="441.0" text="EXPERIENCE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exp" alignment="TOP_LEFT" layoutX="20.0" layoutY="470.0" prefHeight="121.0" prefWidth="468.0" text="Describe&#10;your&#10;Exprience&#10;here&#10;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="591.0" text="REFERENCE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ref" alignment="TOP_LEFT" layoutX="20.0" layoutY="626.0" prefHeight="110.0" prefWidth="468.0" text="Describe&#10;your&#10;reference&#10;here&#10;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="503.0" layoutY="190.0" prefHeight="560.0" prefWidth="180.0" style="-fx-background-color: #ebebeb;">
+                     <children>
+                        <Label layoutX="20.0" layoutY="10.0" text="EDUCATION">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="180.0" text="LANGUAGES">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="350.0" text="SKILLS">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="edu" alignment="TOP_LEFT" layoutX="20.0" layoutY="40.0" prefHeight="141.0" prefWidth="149.0" text="Describe&#10;your&#10;education&#10;here&#10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lan" alignment="TOP_LEFT" layoutX="20.0" layoutY="210.0" prefHeight="141.0" prefWidth="149.0" text="Describe&#10;your&#10;languages&#10;here&#10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ski" alignment="TOP_LEFT" layoutX="20.0" layoutY="380.0" prefHeight="171.0" prefWidth="143.0" text="Describe&#10;your&#10;skills&#10;here&#10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane id="developerPanel" prefHeight="750.0" prefWidth="683.0" GridPane.columnIndex="1">
+               <children>
+                  <Button id="developerButtons" layoutX="84.0" layoutY="650.0" mnemonicParsing="false" onAction="#ChoosePhoto" text="Choose Photo">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="developerButtons" layoutX="393.0" layoutY="650.0" mnemonicParsing="false" onAction="#Update" text="Update Resume">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="firstname" layoutX="25.0" layoutY="50.0" prefHeight="25.0" prefWidth="300.0" promptText="Enter first name" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="lastname" layoutX="360.0" layoutY="50.0" prefHeight="25.0" prefWidth="300.0" promptText="Enter last name" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="field" layoutX="25.0" layoutY="150.0" prefHeight="25.0" prefWidth="300.0" promptText="Enter your field" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="phone" layoutX="360.0" layoutY="150.0" prefHeight="25.0" prefWidth="300.0" promptText="Enter your phone no" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="email" layoutX="25.0" layoutY="250.0" prefHeight="25.0" prefWidth="300.0" promptText="Enter your email" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="address" layoutX="360.0" layoutY="250.0" prefHeight="25.0" prefWidth="300.0" promptText="Enter your addrees" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextArea fx:id="profile" layoutX="25.0" layoutY="350.0" prefHeight="60.0" prefWidth="300.0" promptText="Enter your profile details" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="experience" layoutX="360.0" layoutY="350.0" prefHeight="60.0" prefWidth="300.0" promptText="Enter your experience" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="reference" layoutX="25.0" layoutY="450.0" prefHeight="60.0" prefWidth="300.0" promptText="Enter your reference" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="education" layoutX="360.0" layoutY="450.0" prefHeight="60.0" prefWidth="300.0" promptText="Enter your qualification" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="languages" layoutX="25.0" layoutY="550.0" prefHeight="60.0" prefWidth="300.0" promptText="Enter your languages" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="skills" layoutX="360.0" layoutY="550.0" prefHeight="60.0" prefWidth="300.0" promptText="Enter your skills" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </Pane>
+            <Button id="backButton" fx:id="backButton" mnemonicParsing="false" onAction="#Back" text="🔙" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="-5.0" top="-5.0" />
+               </GridPane.margin>
+            </Button>
+            <MenuBar id="developerMenuBar" prefHeight="25.0" prefWidth="683.0" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#Newfile" text="New file" />
+                        <MenuItem mnemonicParsing="false" onAction="#PDFsave" text="Save as PDF" />
+                        <MenuItem mnemonicParsing="false" onAction="#Exit" text="Exit" />
+                     </items>
+                  </Menu>
+               </menus>
+               <GridPane.margin>
+                  <Insets left="30.0" right="30.0" />
+               </GridPane.margin>
+            </MenuBar>
+            <Button id="exitButton" fx:id="exitButton" mnemonicParsing="false" onAction="#Exit" text="X" textFill="RED" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="-5.0" top="-5.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
